@@ -24,23 +24,29 @@ header nav {
 }
 
 header nav ul {
-  align-items: stretch;
+  align-items: flex-end;
   display: flex;
   height: 80px;
   justify-content: space-between;
 }
 
 header nav ul li {
-  width: 120px;
-  height: 50px;
+  padding: 15px;
+  text-align: center;
 }
 
 header nav ul li:hover {
   background-color: #00b18a;
 }
 
-header .header-btn {
-  align-content: flex-end;
+header .header-btn button {
+  width: 150px;
+  font-size: 1.3em;
+  font-weight: 300;
+  margin: 0 5px;
+  height: 50px;
+  text-align: center;
+  margin-top: 30px;
 }
 
  /* ============== SECAO MAIN ============== */
