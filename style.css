@@ -119,6 +119,25 @@ header .header-btn button {
   line-height: 1.4;
 }
 
+/* ============== SECAO DIFERENCIAIS ============== */
+
+.diff-group {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flex;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.diff-group .diff-col {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.diff-group .diff-col .diff-item {
+
+}
+
  /* ============== SECAO RECURSOS ============== */
 
 #recursos .container .recursos-group {
