@@ -8,6 +8,17 @@ body {
   margin: 0 auto;
 }
 
+.section-title {
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 15px 0;
+}
+
+section {
+  padding: 15px 0;
+}
+
 /* ========= HEADER ========= */
 header {
   margin: 10px 0;
@@ -31,25 +42,87 @@ header nav ul {
 }
 
 header nav ul li {
+  color: #004B3B;
+  font-size: 0.8em;
+  font-weight: 700;
   padding: 15px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 header nav ul li:hover {
-  background-color: #00b18a;
+  background-color: #00CB9E;
+  color: #fff;
 }
 
 header .header-btn button {
-  width: 150px;
   font-size: 1.3em;
   font-weight: 300;
-  margin: 0 5px;
   height: 50px;
-  text-align: center;
+  margin: 0 5px;
   margin-top: 30px;
+  text-align: center;
+  width: 150px;
 }
 
  /* ============== SECAO MAIN ============== */
-#main {
-  background-image: url('img/feira.jpg');
+ #main {
+   background-image: url('img/feira.jpg');
+ }
+
+#main .container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main .preview {
+}
+
+#main .presentation {
+  text-align: center;
+}
+
+#main .presentation h3 {
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+
+#main .presentation p {
+  font-size: 2.5em;
+}
+
+/* ============== SECAO VANTAGENS ============== */
+.advantages-group {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+.advantages-group .advantage {
+  flex-basis: 20%;
+  height: 200px;
+}
+
+.advantages-group .advantage h3 {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.advantages-group .advantage p {
+  text-align: justify;
+  line-height: 1.4;
+}
+
+ /* ============== SECAO RECURSOS ============== */
+
+#recursos .container .recursos-group {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 }
