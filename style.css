@@ -12,11 +12,11 @@ body {
   display: block;
   text-align: center;
   font-size: 2.5em;
-  margin: 15px 0;
+  margin: 15px 0 30px;
 }
 
 section {
-  padding: 15px 0;
+  padding: 15px 0 45px;
 }
 
 /* ========= HEADER ========= */
@@ -95,6 +95,10 @@ header .header-btn button {
 }
 
 /* ============== SECAO VANTAGENS ============== */
+#vantagens {
+  background-color: #3FD4B3;
+}
+
 .advantages-group {
   display: -webkit-flex;
   display: -ms-flex;
@@ -120,6 +124,9 @@ header .header-btn button {
 }
 
 /* ============== SECAO DIFERENCIAIS ============== */
+#diferenciais {
+  background-color: #84B5FE;
+}
 
 .diff-group {
   display: -webkit-inline-flex;
@@ -144,4 +151,83 @@ header .header-btn button {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+}
+
+#recursos .container .recursos-group .list-left,
+#recursos .container .recursos-group .list-right {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+#recursos .container .recursos-group .list-left .recurso {
+  text-align: right;
+}
+
+#recursos .container .recursos-group .recurso {
+  align-items: center;
+  background-color: #84B5FE;
+  border-radius: 7px;
+  box-sizing: border-box;
+  flex-basis: 20%;
+  padding: 15px 20px;
+}
+
+#recursos .container .recursos-group .recurso h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+#recursos .container .recursos-group .recurso p {
+  margin-top: 10px;
+}
+
+/* ============== SECAO TELAS ============== */
+#telas {
+  background-color: #3FD4B3;
+}
+
+#telas .img-group {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+#telas .img-group img {
+  background-color: #ddd;
+  width: 250px;
+  height: 470px;
+}
+
+/* ============== SECAO DOWNLOADS ============== */
+#download {
+  text-align: center;
+}
+
+/* ============== SECAO CONTATO ============== */
+#contato .container .contact-group {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+#contato .container .contact-col {
+  background-color: #ddd;
+  flex-basis: 45%;
+  height: 200px;
+  text-align: center;
+  padding: 30px 0 0;
+}
+
+/* ============== FOOTER ============== */
+footer {
+  text-align: center;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.8em;
+  padding-top: 15px;
+  box-sizing: border-box;
 }
