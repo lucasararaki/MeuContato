@@ -55,6 +55,10 @@ header nav ul li:hover {
   color: #fff;
 }
 
+header .header-btn {
+  display: none;
+}
+
 header .header-btn button {
   font-size: 1.3em;
   font-weight: 300;
@@ -124,7 +128,7 @@ header .header-btn button {
 }
 
 /* ============== SECAO DIFERENCIAIS ============== */
-#diferenciais {
+/*#diferenciais {
   background-color: #84B5FE;
 }
 
@@ -143,7 +147,7 @@ header .header-btn button {
 
 .diff-group .diff-col .diff-item {
 
-}
+}*/
 
  /* ============== SECAO RECURSOS ============== */
 
@@ -183,7 +187,7 @@ header .header-btn button {
 }
 
 /* ============== SECAO TELAS ============== */
-#telas {
+/*#telas {
   background-color: #3FD4B3;
 }
 
@@ -198,11 +202,16 @@ header .header-btn button {
   background-color: #ddd;
   width: 250px;
   height: 470px;
-}
+}*/
 
 /* ============== SECAO DOWNLOADS ============== */
 #download {
   text-align: center;
+}
+
+#download .container p {
+  font-size: 1.3em;
+  margin: 30px 0;
 }
 
 /* ============== SECAO CONTATO ============== */
@@ -216,9 +225,13 @@ header .header-btn button {
 #contato .container .contact-col {
   background-color: #ddd;
   flex-basis: 45%;
-  height: 200px;
+  height: 100px;
   text-align: center;
-  padding: 30px 0 0;
+}
+
+#contato .container .contact-col p {
+  margin: 20px;
+  font-size: 1.2em;
 }
 
 /* ============== FOOTER ============== */
