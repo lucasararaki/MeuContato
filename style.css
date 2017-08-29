@@ -9,19 +9,38 @@ body {
 }
 
 .section-title {
+  color: #1B5847;
   display: block;
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
+  font-weight: 500;
   margin: 15px 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-title {
+  color: #005840;
+  font-family: 'Monteserrat', sans-serif;
+  font-weight: 500;
 }
 
 section {
   padding: 15px 0 45px;
 }
 
+.divider {
+  background-color: #1B5847;
+  border: none;
+  height: 2px;
+  margin-bottom: 40px;
+  width: 50px;
+}
+
 /* ========= HEADER ========= */
 header {
-  margin: 10px 0;
+  background-color: #333;
+  padding: 10px 0;
 }
 
 header .container {
@@ -31,7 +50,7 @@ header .container {
 }
 
 header nav {
-  width: 700px;
+  width: 500px;
 }
 
 header nav ul {
@@ -42,7 +61,7 @@ header nav ul {
 }
 
 header nav ul li {
-  color: #004B3B;
+  color: #fff;
   font-size: 0.8em;
   font-weight: 700;
   padding: 15px;
@@ -52,7 +71,7 @@ header nav ul li {
 
 header nav ul li:hover {
   background-color: #00CB9E;
-  color: #fff;
+  /*color: #fff;*/
 }
 
 header .header-btn {
@@ -87,6 +106,7 @@ header .header-btn button {
 
 #main .presentation {
   text-align: center;
+  font-weight: 300;
 }
 
 #main .presentation h3 {
@@ -94,13 +114,27 @@ header .header-btn button {
   margin-bottom: 30px;
 }
 
-#main .presentation p {
+#main .presentation h3 .app-name {
+  font-weight: 600;
+}
+
+#main .presentation>p {
   font-size: 2.5em;
+}
+
+#main .presentation .download-btn {
+  margin-top: 40px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#main .presentation .download-btn a img {
+  margin-top: 15px;
 }
 
 /* ============== SECAO VANTAGENS ============== */
 #vantagens {
-  background-color: #3FD4B3;
+  /*background-color: #3FD4B3;*/
 }
 
 .advantages-group {
@@ -111,45 +145,30 @@ header .header-btn button {
 }
 
 .advantages-group .advantage {
+  box-shadow: 0 0 10px #7BFFC6;
   flex-basis: 20%;
   height: 200px;
+  padding: 15px;
 }
 
 .advantages-group .advantage h3 {
-  text-align: center;
-  margin: 10px;
+  margin: 10px 0 0 20px;
   font-size: 1.5em;
   font-weight: 700;
 }
 
 .advantages-group .advantage p {
-  text-align: justify;
+  color: #464646;
   line-height: 1.4;
+  margin-top: 10px;
+  text-align: justify;
 }
-
-/* ============== SECAO DIFERENCIAIS ============== */
-/*#diferenciais {
-  background-color: #84B5FE;
-}
-
-.diff-group {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flex;
-  display: inline-flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.diff-group .diff-col {
-  flex-basis: 50%;
-  text-align: center;
-}
-
-.diff-group .diff-col .diff-item {
-
-}*/
 
  /* ============== SECAO RECURSOS ============== */
+#recursos {
+  background-image: url('img/background-pattern.jpg');
+  background-repeat: repeat;
+}
 
 #recursos .container .recursos-group {
   display: -webkit-flex;
@@ -170,7 +189,7 @@ header .header-btn button {
 
 #recursos .container .recursos-group .recurso {
   align-items: center;
-  background-color: #84B5FE;
+  background-color: #C8F1D6;
   border-radius: 7px;
   box-sizing: border-box;
   flex-basis: 20%;
@@ -186,24 +205,6 @@ header .header-btn button {
   margin-top: 10px;
 }
 
-/* ============== SECAO TELAS ============== */
-/*#telas {
-  background-color: #3FD4B3;
-}
-
-#telas .img-group {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: space-around;
-}
-
-#telas .img-group img {
-  background-color: #ddd;
-  width: 250px;
-  height: 470px;
-}*/
-
 /* ============== SECAO DOWNLOADS ============== */
 #download {
   text-align: center;
@@ -215,6 +216,10 @@ header .header-btn button {
 }
 
 /* ============== SECAO CONTATO ============== */
+#contato {
+  background-color: #C8F1D6;
+}
+
 #contato .container .contact-group {
   display: -webkit-flex;
   display: -ms-flex;
@@ -223,7 +228,6 @@ header .header-btn button {
 }
 
 #contato .container .contact-col {
-  background-color: #ddd;
   flex-basis: 45%;
   height: 100px;
   text-align: center;
@@ -234,8 +238,24 @@ header .header-btn button {
   font-size: 1.2em;
 }
 
+#contato .container .contact-right p>a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#contato .container .contact-right img {
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+}
+
 /* ============== FOOTER ============== */
 footer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
   height: 40px;
   background-color: #333;

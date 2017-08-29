@@ -9,6 +9,7 @@
   <title>Meu Contato</title>
 
   <link rel="icon" href="img/icon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
@@ -18,15 +19,15 @@
 
   <header>
     <div class="container">
-      <img src="img/logo.png" alt="" height="80px" />
+      <a href="#home">
+        <img src="img/logo.png" alt="" height="80px" />
+      </a>
 
       <nav>
         <ul>
           <li><a href="#main">Home</a></li>
           <li><a href="#vantagens">Vantagens</a></li>
-          <li><a href="#diferenciais">Diferenciais</a></li>
           <li><a href="#recursos">Recursos</a></li>
-          <li><a href="#telas">Telas</a></li>
           <li><a href="#download">Download</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -47,7 +48,7 @@
         </div>
 
         <div class="presentation">
-          <h3>Conheça o Meu Contato</h3>
+          <h3>Conheça o <span class="app-name">Meu Contato</span></h3>
           <p>
             O aplicativo que vai te ajudar com o networking
           </p>
@@ -67,31 +68,32 @@
     <section id="vantagens">
       <div class="container">
         <h2 class="section-title">Vantagens</h2>
+        <hr class="divider">
 
         <div class="advantages-group">
           <div class="advantage">
-            <h3>Titulo</h3>
+            <h3 class="card-title">Titulo</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             </p>
           </div>
 
           <div class="advantage">
-            <h3>Titulo</h3>
+            <h3 class="card-title">Titulo</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             </p>
           </div>
 
           <div class="advantage">
-            <h3>Titulo</h3>
+            <h3 class="card-title">Titulo</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             </p>
           </div>
 
           <div class="advantage">
-            <h3>Titulo</h3>
+            <h3 class="card-title">Titulo</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             </p>
@@ -100,37 +102,16 @@
       </div>
     </section>
 
-    <!-- diferenciais dos concorrentes -->
-    <!-- <section id="diferenciais">
-      <div class="container">
-        <h2 class="section-title">Diferenciais</h2>
-
-        duas colunas lado a lado
-        <div class="diff-group">
-          <div class="diff-col diff-left">
-            <div class="diff-item">diferencial</div>
-            <div class="diff-item">diferencial</div>
-            <div class="diff-item">diferencial</div>
-          </div>
-
-          <div class="diff-col diff-left">
-            <div class="diff-item">diferencial</div>
-            <div class="diff-item">diferencial</div>
-            <div class="diff-item">diferencial</div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <section id="recursos">
       <div class="container">
         <h2 class="section-title">Recursos</h2>
+        <hr class="divider">
 
         <div class="recursos-group">
           <div class="list-left">
 
             <div class="recurso">
-              <h4>Nome do recurso</h4>
+              <h4 class="card-title">Nome do recurso</h4>
               <p>
                 Resumo do recurso Resumo do recurso Resumo do recurso Resumo do recurso
               </p>
@@ -140,7 +121,7 @@
             </div>
 
             <div class="recurso">
-              <h4>Nome do recurso</h4>
+              <h4 class="card-title">Nome do recurso</h4>
               <p>
                 Resumo do recurso Resumo do recurso Resumo do recurso Resumo do recurso
               </p>
@@ -150,7 +131,7 @@
             </div>
 
             <div class="recurso">
-              <h4>Nome do recurso</h4>
+              <h4 class="card-title">Nome do recurso</h4>
               <p>
                 Resumo do recurso Resumo do recurso Resumo do recurso Resumo do recurso
               </p>
@@ -166,7 +147,7 @@
 
           <div class="list-right">
             <div class="recurso">
-              <h4>Nome do recurso</h4>
+              <h4 class="card-title">Nome do recurso</h4>
               <p>
                 Resumo do recurso Resumo do recurso Resumo do recurso Resumo do recurso
               </p>
@@ -176,7 +157,7 @@
             </div>
 
             <div class="recurso">
-              <h4>Nome do recurso</h4>
+              <h4 class="card-title">Nome do recurso</h4>
               <p>
                 Resumo do recurso Resumo do recurso Resumo do recurso Resumo do recurso
               </p>
@@ -186,7 +167,7 @@
             </div>
 
             <div class="recurso">
-              <h4>Nome do recurso</h4>
+              <h4 class="card-title">Nome do recurso</h4>
               <p>
                 Resumo do recurso Resumo do recurso Resumo do recurso Resumo do recurso
               </p>
@@ -199,22 +180,11 @@
       </div>
     </section>
 
-    <!-- <section id="telas">
-      <div class="container">
-        <h2 class="section-title">Telas</h2>
-
-        <div class="img-group">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </div>
-      </div>
-    </section> -->
-
     <section id="download">
       <div class="container">
         <h2 class="section-title">Baixe já</h2>
+        <hr class="divider">
+
         <p>
           Nosso aplicativo já está disponível para Android.
         </p>
@@ -231,6 +201,7 @@
     <section id="contato">
       <div class="container">
         <h2 class="section-title">Ficou com alguma dúvida?</h2>
+        <hr class="divider">
 
         <div class="contact-group">
           <div class="contact-col contact-left">
@@ -247,7 +218,9 @@
               Ou acesse nossa página no Facebook:
             </p>
             <p>
-              <a href="https://www.facebook.com/meucontatoapp/" target="_blank">Meu Contato Page</a>
+              <a href="https://www.facebook.com/meucontatoapp/" target="_blank">
+                Meu Contato <img src="img/facebook.png" alt="">
+              </a>
             </p>
           </div>
         </div>
@@ -258,6 +231,11 @@
   <footer>
     <p>
       Meu Contato App
+    </p>
+    <p>Padrão usado no plano de fundo:
+      <a class="credit" href='http://www.freepik.com/free-vector/hexagonal-pattern_852781.htm'>
+        Designed by Freepik
+      </a>
     </p>
   </footer>
 </body>
