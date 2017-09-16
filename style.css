@@ -257,7 +257,17 @@ header .header-btn button {
 #recursos .container .img-center {
   flex-basis: 35%;
   text-align: center;
+  /*position: relative;*/
 }
+
+/*#recursos #slider {
+  width: 239px;
+  position: absolute;
+  height: 410px;
+  background: rgba(200,200,200,0.5);
+  top: 49px;
+  left: 44px;
+}*/
 /* ============== SECAO DOWNLOADS ============== */
 #download {
   text-align: center;
@@ -361,11 +371,6 @@ footer {
 }
 
 @media (max-width: 800px) {
-  /*mexer no texto de apresentação
-  fazer o menu sanduiche
-  colocar os textos no footer um acima do outro
-  colocar os metodos de contato um acima do outro
-  redimesionar imagem do celular na apresentação*/
   #main .preview {
     display: none;
   }
