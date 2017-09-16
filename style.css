@@ -131,6 +131,16 @@ header .header-btn button {
 
 #main .preview {
   margin-left: 15px;
+  position: relative;
+}
+
+#main #mainCarrousel {
+  width: 238px;
+  position: absolute;
+  height: 410px;
+  background: rgba(200,200,200,0.5);
+  top: 49px;
+  left: 14px;
 }
 
 #main .presentation {
