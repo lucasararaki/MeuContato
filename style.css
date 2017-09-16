@@ -56,6 +56,7 @@ header .container a {
 header img {
   width: 350px;
   height: auto;
+  margin-left: 15px;
 }
 
 /*botão do menu responsivo*/
@@ -129,6 +130,7 @@ header .header-btn button {
 }
 
 #main .preview {
+  margin-left: 15px;
 }
 
 #main .presentation {
@@ -210,7 +212,7 @@ header .header-btn button {
 #recursos .container .recursos-group .list-left,
 #recursos .container .recursos-group .list-right {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -293,16 +295,15 @@ header .header-btn button {
 
 /* ============== FOOTER ============== */
 footer {
+  align-items: center;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-around;
-  text-align: center;
   height: 40px;
   background-color: #333;
   color: #fff;
   font-size: 0.8em;
-  padding-top: 15px;
   box-sizing: border-box;
 }
 
@@ -355,11 +356,19 @@ footer {
   colocar os textos no footer um acima do outro
   colocar os metodos de contato um acima do outro
   redimesionar imagem do celular na apresentação*/
+  #main .preview {
+    display: none;
+  }
+
+  #main .presentation {
+    margin-right: 0;
+  }
+
   header label[for="btn-menu"] {
     display: block;
   }
 
-  .header-menu {
+  .header-menu, .header-menu ul {
     display: none;
   }
 
@@ -369,27 +378,55 @@ footer {
     border-bottom: 1px solid #444;
     font-size: 2em;
     font-weight: 300;
+    width: 100%;
   }
 
   #btn-menu:checked ~ .header-menu, #btn-menu:checked ~ .header-menu>ul{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: all .3s;
     width: 100%;
+    height: 315px;
+    z-index: 1;
   }
 
   .advantages-group .advantage {
     flex-basis: 41%;
   }
 
+  #recursos .container .recursos-group {
+    flex-direction: column;
+  }
+
+  #recursos .container .recursos-group .list-left,
+  #recursos .container .recursos-group .list-right {
+    align-items: center;
+  }
+
   #recursos .container .img-center {
     display: none;
   }
 
-  #recursos .container .recursos-group .list-left .recurso {
-    margin-right: 10px;
+  #recursos .container .recursos-group .list-left .recurso,
+  #recursos .container .recursos-group .list-right .recurso {
+    text-align: center;
   }
 
-  #recursos .container .recursos-group .list-right .recurso {
-    margin-left: 10px;
+  #recursos .container .recursos-group .list-left .card-title,
+  #recursos .container .recursos-group .list-right .card-title {
+    font-size: 1.8em;
+  }
+
+  #recursos .container .recursos-group p {
+    font-size: 1.4em;
+  }
+
+  #contato .container .contact-group {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
   }
 }
