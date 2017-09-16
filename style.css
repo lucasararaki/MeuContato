@@ -39,7 +39,6 @@ section {
 
 /* ========= HEADER ========= */
 header {
-  background-color: #333;
   padding: 10px 0;
 }
 
@@ -47,6 +46,31 @@ header .container {
   display: flex;
   height: 80px;
   justify-content: space-between;
+}
+
+header .container a {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 350px;
+  height: auto;
+}
+
+/*botão do menu responsivo*/
+#btn-menu {
+  display: none;
+}
+
+header label[for="btn-menu"] {
+  background: #565656;
+  color: #fff;
+  display: none;
+  font-size: 3em;
+  margin-right: 15px;
+  height: 50px;
+  padding: 10px;
 }
 
 header nav {
@@ -61,7 +85,7 @@ header nav ul {
 }
 
 header nav ul li {
-  color: #fff;
+  color: #565656;
   font-size: 0.8em;
   font-weight: 700;
   padding: 15px;
@@ -71,7 +95,7 @@ header nav ul li {
 
 header nav ul li:hover {
   background-color: #00CB9E;
-  /*color: #fff;*/
+  color: #fff;
 }
 
 header .header-btn {
@@ -90,7 +114,10 @@ header .header-btn button {
 
  /* ============== SECAO MAIN ============== */
 #main {
-   background-image: url('img/feira.jpg');
+   background-image: url('img/feira_dark.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
 }
 
 #main .container {
@@ -105,9 +132,10 @@ header .header-btn button {
 }
 
 #main .presentation {
-  text-align: center;
+  color: #fff;
   font-weight: 300;
   margin-right: 40px;
+  text-align: center;
 }
 
 #main .presentation h3 {
@@ -147,7 +175,7 @@ header .header-btn button {
 }
 
 .advantages-group .advantage {
-  box-shadow: 0 0 10px #7BFFC6;
+  box-shadow: 0 0 10px #b1b1b1;
   flex-basis: 20%;
   height: 200px;
   padding: 15px;
@@ -290,6 +318,11 @@ footer {
 }
 
 @media (max-width: 1000px) {
+
+  header .container a img {
+    width: 270px;
+  }
+
   .advantages-group .advantage {
     flex-basis: 43%;
   }
@@ -301,6 +334,11 @@ footer {
 }
 
 @media (max-width: 900px) {
+
+  header .container a img {
+    width: 220px;
+  }
+
   .advantages-group .advantage {
     flex-basis: 42%;
     font-size: 0.9em;
@@ -317,6 +355,27 @@ footer {
   colocar os textos no footer um acima do outro
   colocar os metodos de contato um acima do outro
   redimesionar imagem do celular na apresentação*/
+  header label[for="btn-menu"] {
+    display: block;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-menu ul li {
+    color: #fff;
+    background-color: #333;
+    border-bottom: 1px solid #444;
+    font-size: 2em;
+    font-weight: 300;
+  }
+
+  #btn-menu:checked ~ .header-menu, #btn-menu:checked ~ .header-menu>ul{
+    display: block;
+    transition: all .3s;
+    width: 100%;
+  }
 
   .advantages-group .advantage {
     flex-basis: 41%;
