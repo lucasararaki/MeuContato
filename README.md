@@ -1,4 +1,4 @@
-# Landing Meu Contato
+# Meu Contato
 
 Esse repositório constitui a landing page para o projeto de TCC do curso de engenharia da computação na FIAP.
 
